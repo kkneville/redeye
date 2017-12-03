@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="10" height="20" tilewidth="32" tileheight="32" nextobjectid="29">
+ <tileset firstgid="1" source="../maps/simple.tsx"/>
+ <tileset firstgid="401" source="running-eye.tsx"/>
+ <layer name="backgroundLayer" width="10" height="20">
+  <data encoding="csv">
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,62,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,64,64,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+0,0,0,66,0,66,66,66,66,66
+</data>
+ </layer>
+ <layer name="groundLayer" width="10" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+124,124,0,0,0,0,0,124,124,124,
+0,0,0,0,0,124,0,0,0,0,
+0,0,0,124,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+124,124,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,124,124,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,124,124,0,
+124,0,0,124,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,124,124,124,
+0,0,0,0,0,0,0,0,0,0,
+124,124,124,124,0,0,0,0,0,0,
+0,0,0,0,0,0,0,124,124,124,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+124,124,124,124,124,124,0,0,0,124
+</data>
+ </layer>
+ <objectgroup name="objectsLayer">
+  <object id="1" type="playerStart" gid="423" x="0" y="605" width="32" height="32">
+   <properties>
+    <property name="type" value="playerStart"/>
+   </properties>
+  </object>
+  <object id="3" type="items" gid="164" x="288" y="65" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+   </properties>
+  </object>
+  <object id="12" type="items" gid="164" x="0" y="192" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+   </properties>
+  </object>
+  <object id="13" type="items" gid="164" x="1" y="353" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+   </properties>
+  </object>
+  <object id="14" type="items" gid="164" x="287" y="417" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+   </properties>
+  </object>
+  <object id="15" type="items" gid="164" x="-2" y="481" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+   </properties>
+  </object>
+  <object id="16" type="items" gid="164" x="285" y="513" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+   </properties>
+  </object>
+  <object id="17" type="items" gid="164" x="-1" y="62" width="32" height="32">
+   <properties>
+    <property name="sprite" value="star"/>
+   </properties>
+  </object>
+  <object id="24" type="acid" gid="164" x="192" y="639" width="32" height="32">
+   <properties>
+    <property name="sprite" value="acid"/>
+   </properties>
+  </object>
+  <object id="25" type="acid" gid="164" x="225" y="640" width="32" height="32">
+   <properties>
+    <property name="sprite" value="acid"/>
+   </properties>
+  </object>
+  <object id="26" type="acid" gid="164" x="256" y="639" width="32" height="32">
+   <properties>
+    <property name="sprite" value="acid"/>
+   </properties>
+  </object>
+  <object id="27" type="water" gid="162" x="31" y="384" width="32" height="32">
+   <properties>
+    <property name="sprite" value="water"/>
+   </properties>
+  </object>
+  <object id="28" type="water" gid="162" x="63" y="385" width="32" height="32">
+   <properties>
+    <property name="sprite" value="water"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
