@@ -4,7 +4,7 @@ var game = new Phaser.Game(640,640, Phaser.CANVAS, 'redeye', { preload: preload,
 
 function preload() {
 	
-	game.load.tilemap('map', 'maps/finalgame2.json', null, Phaser.Tilemap.TILED_JSON);
+	game.load.tilemap('map', 'maps/finalgame3.json', null, Phaser.Tilemap.TILED_JSON);
 	game.load.image('finalcolors', 'img/finalcolors.png');
 	game.load.spritesheet('player', 'img/redeye.png', 32,32 );
     game.load.spritesheet('star', 'img/bubble1.png', 32,32 )
