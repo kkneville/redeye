@@ -139,17 +139,17 @@ function create() {
         console.log("c.body ", c.body)  
     } 
 
-    darkkilljuice = game.add.physicsGroup()
+    // darkkilljuice = game.add.physicsGroup()
 
-    var findDark = getObjects('darkkilljuice')
-    console.log("dark kill blocks: ", findDark)
+    // var findDark = getObjects('darkkilljuice')
+    // console.log("dark kill blocks: ", findDark)
 
-    for (var a = 0; a < findDark.length; a ++){
-        var c = darkkilljuice.create(findDark[a].x, findDark[a].y, 'darkkilljuice')
-        c.body.mass = -100
-        c.body.allowGravity = false
-        console.log("c.body ", c.body)  
-    } 
+    // for (var a = 0; a < findDark.length; a ++){
+    //     var c = darkkilljuice.create(findDark[a].x, findDark[a].y, 'darkkilljuice')
+    //     c.body.mass = -100
+    //     c.body.allowGravity = false
+    //     console.log("c.body ", c.body)  
+    // } 
 
     // game.add.sprite(
 
@@ -167,7 +167,7 @@ function create() {
     game.physics.enable(stars);
     game.physics.arcade.enable(acid);
     game.physics.arcade.enable(lightkilljuice);
-    game.physics.arcade.enable(darkkilljuice);
+    // game.physics.arcade.enable(darkkilljuice);
     game.physics.arcade.enable(endgame);
 
     // define player movement
@@ -223,7 +223,8 @@ function update() {
 
     }
 
-    game.physics.arcade.overlap(player, darkkilljuice, fallIn, null)
+    // game.physics.arcade.overlap(player, darkkilljuice, fallIn, null)
+    game.physics.arcade.overlap(player, acid, fallIn, null)
     game.physics.arcade.overlap(player, lightkilljuice, fallIn, null)
 
     function fallIn(player, lightkilljuice){
@@ -238,7 +239,7 @@ function update() {
     } 
 
 
-    function fallIn(player, darkkilljuice){
+    function fallIn(player, acid){
         var x = player.x
         var y = player.y
         player.kill()
@@ -250,10 +251,8 @@ function update() {
     } 
 
 
-    if (!game.physics.arcade.overlap(player,acid)){
+   
     stars.callAll("play", null, 'hover');
-    }
-
     acid.callAll("play", null, 'bubble');
     water.callAll("play", null, 'bubble');
 
